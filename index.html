@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Agenda Telefônica Digital</title>
+    <script src="https://unpkg.com/imask"></script>
+</head>
+
+<body>
+    <main id="container">
+        <section class="agenda">
+            <form id="form">
+                <h1 id="title">
+                    Agenda Digital
+                </h1>
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input id="nameinput" type="text" placeholder="Nome do Contato" required/>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="number">
+                        Número
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input id="numberinput" type="text" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+                <button id="submit">Adicionar Contato</button>
+            </form>
+            <h2>Contatos</h2>
+            <table id="contacts">
+                <thead>
+                    <tr id="tablecell">
+                        <th>Nomes</th>
+                        <th>Números</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
